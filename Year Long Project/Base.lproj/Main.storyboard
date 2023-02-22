@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,207 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Year_Long_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Star Background" translatesAutoresizingMaskIntoConstraints="NO" id="8M4-md-olU">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="Avh-tf-lBd"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="r64-P1-Vwb">
+                                <rect key="frame" x="133" y="59" width="127" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="r64-P1-Vwb" secondAttribute="height" multiplier="127:128" id="I0D-dB-O4X"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ehU-HA-XLt">
+                                <rect key="frame" x="20" y="220.00000000000003" width="353" height="260.66666666666674"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hmX-0n-1HD">
+                                        <rect key="frame" x="100.66666666666667" y="0.0" width="151.66666666666663" height="36.666666666666664"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="User's Name">
+                                                <attributes>
+                                                    <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <font key="NSFont" size="30" name="Impact"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    <real key="NSStrokeWidth" value="3"/>
+                                                    <integer key="NSUnderline" value="1"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tech Interests:" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yH0-vW-kB3">
+                                        <rect key="frame" x="113.33333333333334" y="44.666666666666686" width="126.33333333333334" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Facts" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rnH-JF-oeg">
+                                        <rect key="frame" x="137" y="73" width="79" height="19.666666666666671"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Companies:" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="byf-VR-wuy">
+                                        <rect key="frame" x="126.33333333333334" y="100.66666666666669" width="100.66666666666666" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Facts" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gsH-5s-q8V">
+                                        <rect key="frame" x="137" y="129" width="79" height="19.666666666666657"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Disliked Tech:" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NwS-vv-S7G">
+                                        <rect key="frame" x="118" y="156.66666666666669" width="117.33333333333331" height="20.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Facts" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sc8-2A-MNz">
+                                        <rect key="frame" x="137" y="185" width="79" height="19.666666666666657"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Other User Facts:" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oIs-U1-8aC">
+                                        <rect key="frame" x="102.66666666666667" y="212.66666666666669" width="147.66666666666663" height="20.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Facts" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T7f-MM-92J">
+                                        <rect key="frame" x="137" y="241" width="79" height="19.666666666666686"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="YB5-Vd-MyY">
+                                <rect key="frame" x="10" y="550.66666666666663" width="373" height="158.66666666666663"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Posts from this User" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MBH-WV-GYP">
+                                        <rect key="frame" x="104.66666666666667" y="0.0" width="163.66666666666663" height="24.666666666666668"/>
+                                        <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wLK-TW-cVi">
+                                        <rect key="frame" x="10" y="33.666666666666742" width="353" height="125"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Post Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IGj-wP-G0X">
+                                                <rect key="frame" x="5" y="5" width="340" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="4Jj-Iq-w2R"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="post Content" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SJF-ga-gVS">
+                                                <rect key="frame" x="5" y="40" width="343" height="60.333333333333343"/>
+                                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="13"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date Posted" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f0G-d3-knn">
+                                                <rect key="frame" x="5" y="105.33333333333326" width="343" height="14.666666666666671"/>
+                                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="11"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="f0G-d3-knn" secondAttribute="trailing" constant="5" id="1T5-gE-diL"/>
+                                            <constraint firstItem="SJF-ga-gVS" firstAttribute="top" secondItem="IGj-wP-G0X" secondAttribute="bottom" constant="5" id="4Jl-Bm-BPb"/>
+                                            <constraint firstItem="f0G-d3-knn" firstAttribute="top" secondItem="SJF-ga-gVS" secondAttribute="bottom" constant="5" id="IX0-0k-xMY"/>
+                                            <constraint firstAttribute="bottom" secondItem="f0G-d3-knn" secondAttribute="bottom" constant="5" id="Kwn-oW-cXF"/>
+                                            <constraint firstItem="IGj-wP-G0X" firstAttribute="top" secondItem="wLK-TW-cVi" secondAttribute="top" constant="5" id="M9z-2I-5hO"/>
+                                            <constraint firstItem="SJF-ga-gVS" firstAttribute="leading" secondItem="wLK-TW-cVi" secondAttribute="leading" constant="5" id="TGk-Xt-sn1"/>
+                                            <constraint firstAttribute="trailing" secondItem="IGj-wP-G0X" secondAttribute="trailing" constant="8" id="Tlr-8c-yZG"/>
+                                            <constraint firstItem="IGj-wP-G0X" firstAttribute="leading" secondItem="wLK-TW-cVi" secondAttribute="leading" constant="5" id="UIn-U7-o6G"/>
+                                            <constraint firstItem="f0G-d3-knn" firstAttribute="leading" secondItem="wLK-TW-cVi" secondAttribute="leading" constant="5" id="qrE-px-ecK"/>
+                                            <constraint firstAttribute="trailing" secondItem="SJF-ga-gVS" secondAttribute="trailing" constant="5" id="xUJ-sR-vax"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="My4-18-jiK">
+                                <rect key="frame" x="117.33333333333333" y="777" width="158.33333333333337" height="41"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="StarJet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Phf-BX-JG9">
+                                        <rect key="frame" x="0.0" y="0.0" width="109.33333333333333" height="41"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="41" id="TmJ-wb-i65"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="109.33" id="qLB-Bo-nai"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="35"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="moon.stars.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="HNS-bK-6xZ">
+                                        <rect key="frame" x="117.33333333333331" y="0.0" width="41" height="40"/>
+                                        <color key="tintColor" red="0.60784316059999999" green="0.34901961679999999" blue="0.81176471709999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="41" id="Jay-Ba-GuM"/>
+                                            <constraint firstAttribute="width" constant="41" id="Ude-yo-voP"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="HNS-bK-6xZ" firstAttribute="leading" secondItem="Phf-BX-JG9" secondAttribute="trailing" constant="8" id="CVO-3E-NIp"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.19607841970000001" green="0.074509806930000005" blue="0.35686278339999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="8M4-md-olU" firstAttribute="bottom" secondItem="r64-P1-Vwb" secondAttribute="bottom" constant="13" id="0Rn-WA-YkP"/>
+                            <constraint firstItem="8M4-md-olU" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="54o-bf-dAZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YB5-Vd-MyY" secondAttribute="trailing" constant="10" id="5zd-nb-qan"/>
+                            <constraint firstItem="YB5-Vd-MyY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="9L1-bC-odh"/>
+                            <constraint firstItem="ehU-HA-XLt" firstAttribute="top" secondItem="8M4-md-olU" secondAttribute="bottom" constant="20" id="9lX-mQ-hss"/>
+                            <constraint firstItem="ehU-HA-XLt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="AHG-Wc-d7m"/>
+                            <constraint firstItem="r64-P1-Vwb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Brv-1s-J32"/>
+                            <constraint firstItem="YB5-Vd-MyY" firstAttribute="top" secondItem="ehU-HA-XLt" secondAttribute="bottom" constant="70" id="EU3-u6-cTo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8M4-md-olU" secondAttribute="trailing" id="S3Y-8R-Mk1"/>
+                            <constraint firstItem="r64-P1-Vwb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TsN-7f-tlh"/>
+                            <constraint firstItem="8M4-md-olU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ek4-np-Pci"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ehU-HA-XLt" secondAttribute="trailing" constant="20" id="heE-Tk-21c"/>
+                            <constraint firstItem="My4-18-jiK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="snD-MN-Rcc"/>
+                            <constraint firstItem="My4-18-jiK" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="tbZ-Ty-oAG"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="datePostedLabel" destination="f0G-d3-knn" id="BUZ-ex-a7P"/>
+                        <outlet property="postContent" destination="SJF-ga-gVS" id="fmh-8A-WZc"/>
+                        <outlet property="postTitle" destination="IGj-wP-G0X" id="thP-7S-gs8"/>
+                        <outlet property="postView" destination="wLK-TW-cVi" id="7XJ-Qh-Uzr"/>
+                        <outlet property="profilePictureView" destination="r64-P1-Vwb" id="J6d-Xa-1D5"/>
+                        <outlet property="userCompaniesLabel" destination="gsH-5s-q8V" id="zTw-gf-ayc"/>
+                        <outlet property="userDislikesLabel" destination="sc8-2A-MNz" id="3Pt-HI-77E"/>
+                        <outlet property="userFactsLabel" destination="T7f-MM-92J" id="ezM-zo-9Tx"/>
+                        <outlet property="userInterestsLabel" destination="rnH-JF-oeg" id="brY-z6-5WW"/>
+                        <outlet property="usersNameLabel" destination="hmX-0n-1HD" id="JGr-e9-ETz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-51.145038167938928" y="3.5211267605633805"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Star Background" width="811" height="360"/>
+        <image name="moon.stars.fill" catalog="system" width="125" height="128"/>
+    </resources>
 </document>
