@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class UserViewController: UIViewController {
     
     @IBOutlet weak var profilePictureView: UIImageView!
     @IBOutlet weak var usersNameLabel: UILabel!
@@ -15,18 +15,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var userCompaniesLabel: UILabel!
     @IBOutlet weak var userDislikesLabel: UILabel!
     @IBOutlet weak var userFactsLabel: UILabel!
-    @IBOutlet weak var postTitle: UILabel!
-    @IBOutlet weak var postContent: UILabel!
-    @IBOutlet weak var datePostedLabel: UILabel!
-    @IBOutlet weak var postView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         overrideUserInterfaceStyle = .dark
         setupProfilePicture()
         callUser()
-        callPost()
-        postView.layer.cornerRadius = 5
+    }
+    
+    @IBAction func unwind(unwindSegue: UIStoryboardSegue) {
     }
     
     func setupProfilePicture() {
@@ -50,30 +47,12 @@ class ViewController: UIViewController {
         profilePictureView.image = userImage
     }
     
-    func callPost() {
-        let mostRecentPost = Post(title: "Just finished the first App prototype!", content: "It took me a few months of troubleshooting, but I'm confident that I'll be able to enter the bugfixing and polishing stages soon.", date: Date(timeIntervalSinceReferenceDate: -123456789.0))
-        
-        let weekday = Calendar.current.component(.weekday, from: mostRecentPost.date)
-        let month = Calendar.current.component(.month, from: mostRecentPost.date)
-        let date = Calendar.current.component(.day, from: mostRecentPost.date)
-        
-        postTitle.text = mostRecentPost.title
-        postContent.text = mostRecentPost.content
-        datePostedLabel.text = "Posted \(Calendar.current.weekdaySymbols[weekday-1]), \(Calendar.current.shortMonthSymbols[month-1]) \(date)"
+    struct User {
+        var name: String
+        var techInterests: String
+        var techCompanies: String
+        var dislikedTech: String
+        var extraUserFacts: String
+        var profilePicture: UIImage
     }
-}
-
-struct User {
-    var name: String
-    var techInterests: String
-    var techCompanies: String
-    var dislikedTech: String
-    var extraUserFacts: String
-    var profilePicture: UIImage
-}
-
-struct Post {
-    var title: String
-    var content: String
-    var date: Date
 }
