@@ -7,7 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8647F89429A7BF8E00B24570 /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8647F89329A7BF8E00B24570 /* PostsViewController.swift */; };
+		86495B5929C8A5A400442A1E /* Help Outline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86495B5829C8A5A400442A1E /* Help Outline.swift */; };
+		86495B5B29C8A78200442A1E /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86495B5A29C8A78200442A1E /* PostCell.swift */; };
+		86495B5D29C8AAD500442A1E /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86495B5C29C8AAD500442A1E /* Post.swift */; };
+		86495B6129C8AF1000442A1E /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86495B6029C8AF1000442A1E /* CommentCell.swift */; };
+		86495B6329C8AF1C00442A1E /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86495B6229C8AF1C00442A1E /* Comment.swift */; };
+		86495B6729C8B9DA00442A1E /* PostsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86495B6629C8B9DA00442A1E /* PostsTableViewController.swift */; };
+		869CF39D29CA0172005AC1D4 /* DefaultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869CF39C29CA0172005AC1D4 /* DefaultCell.swift */; };
 		869DFD3E29A6675E007C2404 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869DFD3D29A6675E007C2404 /* AppDelegate.swift */; };
 		869DFD4029A6675E007C2404 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869DFD3F29A6675E007C2404 /* SceneDelegate.swift */; };
 		869DFD4229A6675E007C2404 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869DFD4129A6675E007C2404 /* UserViewController.swift */; };
@@ -17,7 +23,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8647F89329A7BF8E00B24570 /* PostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewController.swift; sourceTree = "<group>"; };
+		86495B5829C8A5A400442A1E /* Help Outline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Help Outline.swift"; sourceTree = "<group>"; };
+		86495B5A29C8A78200442A1E /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		86495B5C29C8AAD500442A1E /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		86495B6029C8AF1000442A1E /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		86495B6229C8AF1C00442A1E /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		86495B6629C8B9DA00442A1E /* PostsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsTableViewController.swift; sourceTree = "<group>"; };
+		869CF39C29CA0172005AC1D4 /* DefaultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCell.swift; sourceTree = "<group>"; };
 		869DFD3A29A6675E007C2404 /* Year Long Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Year Long Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		869DFD3D29A6675E007C2404 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		869DFD3F29A6675E007C2404 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +54,7 @@
 		869DFD3129A6675D007C2404 = {
 			isa = PBXGroup;
 			children = (
+				86495B5829C8A5A400442A1E /* Help Outline.swift */,
 				869DFD3C29A6675E007C2404 /* Year Long Project */,
 				869DFD3B29A6675E007C2404 /* Products */,
 			);
@@ -60,11 +73,16 @@
 			children = (
 				869DFD3D29A6675E007C2404 /* AppDelegate.swift */,
 				869DFD3F29A6675E007C2404 /* SceneDelegate.swift */,
-				8647F89329A7BF8E00B24570 /* PostsViewController.swift */,
 				869DFD4129A6675E007C2404 /* UserViewController.swift */,
-				869DFD4329A6675E007C2404 /* Main.storyboard */,
+				86495B6629C8B9DA00442A1E /* PostsTableViewController.swift */,
+				86495B5C29C8AAD500442A1E /* Post.swift */,
+				86495B5A29C8A78200442A1E /* PostCell.swift */,
+				86495B6229C8AF1C00442A1E /* Comment.swift */,
+				86495B6029C8AF1000442A1E /* CommentCell.swift */,
+				869CF39C29CA0172005AC1D4 /* DefaultCell.swift */,
 				869DFD4629A6675E007C2404 /* Assets.xcassets */,
 				869DFD4829A6675E007C2404 /* LaunchScreen.storyboard */,
+				869DFD4329A6675E007C2404 /* Main.storyboard */,
 				869DFD4B29A6675E007C2404 /* Info.plist */,
 			);
 			path = "Year Long Project";
@@ -141,10 +159,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8647F89429A7BF8E00B24570 /* PostsViewController.swift in Sources */,
+				86495B5929C8A5A400442A1E /* Help Outline.swift in Sources */,
+				869CF39D29CA0172005AC1D4 /* DefaultCell.swift in Sources */,
 				869DFD4229A6675E007C2404 /* UserViewController.swift in Sources */,
 				869DFD3E29A6675E007C2404 /* AppDelegate.swift in Sources */,
 				869DFD4029A6675E007C2404 /* SceneDelegate.swift in Sources */,
+				86495B5D29C8AAD500442A1E /* Post.swift in Sources */,
+				86495B5B29C8A78200442A1E /* PostCell.swift in Sources */,
+				86495B6329C8AF1C00442A1E /* Comment.swift in Sources */,
+				86495B6129C8AF1000442A1E /* CommentCell.swift in Sources */,
+				86495B6729C8B9DA00442A1E /* PostsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
